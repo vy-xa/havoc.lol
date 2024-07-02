@@ -185,7 +185,7 @@ function library.new(library_title, cfg_location)
         Position = UDim2.new(0.5, 0, 0.5, 0),
         Size = UDim2.new(0, 700, 0, 500),
         Image = "http://www.roblox.com/asset/?id=7300333488",
-        ImageColor3 = Color3.new(255, 0, 0),
+        ImageColor3 = Color3.new(55, 0, 55),
         AutoButtonColor = false,
         Modal = true,
     }, ScreenGui)
@@ -1931,7 +1931,7 @@ function library.new(library_title, cfg_location)
                         }, SliderButton)
 
                         local UIGradient = library:create("UIGradient", {
-                            Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(139, 0, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 0))},
+                            Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(139, 0, 139)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 255))},
                             Rotation = 90,
                         }, SliderFrame)
 
