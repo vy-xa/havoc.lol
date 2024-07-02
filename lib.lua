@@ -366,7 +366,7 @@ function library.new(library_title, cfg_location)
             }, SectionButton)
 
             local UIGradient = library:create("UIGradient", {
-                Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(25, 55, 5)), ColorSequenceKeypoint.new(0.5, Color3.fromRGB(243, 80, 243)), ColorSequenceKeypoint.new(1, Color3.fromRGB(25, 55, 5))},
+                Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(25, 5, 25)), ColorSequenceKeypoint.new(0.5, Color3.fromRGB(243, 80, 243)), ColorSequenceKeypoint.new(1, Color3.fromRGB(25, 5, 25))},
             }, SectionDecoration)
 
             local SectionFrame = library:create("Frame", {
