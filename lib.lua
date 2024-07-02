@@ -181,7 +181,7 @@ function library.new(library_title, cfg_location)
         Name = "Main",
         AnchorPoint = Vector2.new(0.5, 0.5),
         BackgroundColor3 = Color3.fromRGB(15, 15, 15),
-        BorderColor3 = Color3.fromRGB(25, 55, 5),
+        BorderColor3 = Color3.fromRGB(25, 0, 25),
         Position = UDim2.new(0.5, 0, 0.5, 0),
         Size = UDim2.new(0, 700, 0, 500),
         Image = "http://www.roblox.com/asset/?id=7300333488",
@@ -289,7 +289,7 @@ function library.new(library_title, cfg_location)
             is_first_tab = false
             selected_tab = TabButton
 
-            TabImage.ImageColor3 = Color3.fromRGB(25, 55, 5)
+            TabImage.ImageColor3 = Color3.fromRGB(25, 5, 25)
             Tab.Visible = true
         end
 
@@ -306,7 +306,7 @@ function library.new(library_title, cfg_location)
             end
             Tab.Visible = true
             selected_tab = TabButton
-            library:tween(TabImage, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(255, 58, 58)})
+            library:tween(TabImage, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(58, 0, 58)})
         end)
         TabButton.MouseEnter:Connect(function()
             if selected_tab == TabButton then return end
@@ -416,7 +416,7 @@ function library.new(library_title, cfg_location)
 
                 selected_section = SectionButton
                 SectionFrame.Visible = true
-                library:tween(SectionButton, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 84, 84)})
+                library:tween(SectionButton, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(84, 0, 84)})
                 SectionDecoration.Visible = true
             end)
 
@@ -424,7 +424,7 @@ function library.new(library_title, cfg_location)
                 is_first_section = false
                 selected_section = SectionButton
 
-                SectionButton.TextColor3 = Color3.fromRGB(255, 84, 84) 
+                SectionButton.TextColor3 = Color3.fromRGB(84, 0, 84) 
     
                 SectionDecoration.Visible = true
                 SectionFrame.Visible = true
@@ -617,7 +617,7 @@ function library.new(library_title, cfg_location)
 
                             local KeybindFrame = library:create("Frame", {
                                 Name = "KeybindFrame",
-                                BackgroundColor3 = Color3.fromRGB(15, 0, 0),
+                                BackgroundColor3 = Color3.fromRGB(15, 0, 15),
                                 BorderColor3 = Color3.fromRGB(30, 30, 30),
                                 Position = UDim2.new(1, 5, 0, 3),
                                 Size = UDim2.new(0, 55, 0, 75),
@@ -823,7 +823,7 @@ function library.new(library_title, cfg_location)
                             local ColorButton = library:create("TextButton", {
                                 Name = "ColorButton",
                                 AnchorPoint = Vector2.new(1, 0.5),
-                                BackgroundColor3 = Color3.fromRGB(255, 28, 28),
+                                BackgroundColor3 = Color3.fromRGB(100, 28, 100),
                                 BorderColor3 = Color3.fromRGB(0, 0, 0),
                                 Position = UDim2.new(0, 265, 0.5, 0),
                                 Size = UDim2.new(0, 35, 0, 11),
