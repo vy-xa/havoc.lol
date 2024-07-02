@@ -1,4 +1,4 @@
- local library = {}
+local library = {}
 
 local TweenService = game:GetService("TweenService")
 function library:tween(...) TweenService:Create(...):Play() end
