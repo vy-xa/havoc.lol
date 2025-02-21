@@ -68,7 +68,7 @@ do
         local fakelag = antiaim.new_sector("fakelag", "Right")
         fakelag.element("Toggle", "enabled"):add_keybind()
         fakelag.element("Dropdown", "method", {options = {"static", "random"}})
-        fakelag.element("Slider", "limit", {default = {min = 1, max = 50, default = 6}})
+        fakelag.element("Slider", "limit", {default = {min = 1, max = 16, default = 6}})
         fakelag.element("Toggle", "visualize"):add_color(nil, true)
         fakelag.element("Toggle", "freeze world", nil, function(state)
             if menu.values[1].antiaim.fakelag["freeze world"].Toggle and menu.values[1].antiaim.fakelag["$freeze world"].Active then
